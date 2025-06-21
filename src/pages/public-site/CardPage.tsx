@@ -146,7 +146,7 @@ const BusinessCard = () => {
     <div className="max-w-2xl mx-auto bg-white rounded-xl shadow-md overflow-hidden md:w-full mb-8">
       {/* Banner Image */}
       {bannerImage ?
-        <div className="h-48 bg-gray-200 overflow-hidden">
+        <div className="h-48 bg-transparent overflow-hidden">
           <img 
             src={bannerImage} 
             alt="Banner" 

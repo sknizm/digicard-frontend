@@ -3,17 +3,13 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { Toaster } from "@/components/ui/sonner";
 import { lazy, Suspense, useContext } from 'react';// Recommended for au
 import BouncingDotsLoader from './components/ui/bounce-loader';
-import MenuListPage from './pages/dashboard/allmenus';
-import MenuItemForm from './pages/dashboard/addmenu';
 import HomePage from './pages/main-site/HomePage';
 import { AppContext } from './context/AppContext';
 import { AdminPage } from './pages/adminboard/AdminPage';
 import { OverviewPage } from './pages/adminboard/OverViewPage';
 import { UsersPage } from './pages/adminboard/UsersPage';
-import MembershipsPage from './pages/adminboard/MembershipPage';
 import { config } from './lib/config';
 import Membership from './pages/dashboard/membership';
-import BulkMenuItemForm from './pages/dashboard/bulkadd';
 import BusinessCard from './pages/public-site/CardPage';
 import CardSettingsPage from './pages/dashboard/setting';
 
@@ -71,11 +67,7 @@ function App() {
             >
               <Route index element={<Navigate to="home" replace />} />
               <Route path="home" element={<DashboardHomePage />} />
-              <Route path="menu" element={<MenuListPage />} />
-              <Route path="menu/create" element={<MenuItemForm />} />
-              <Route path="menu/create/:id" element={<MenuItemForm />} />
               <Route path="membership" element={<Membership />} />
-              <Route path="bulk-add" element={<BulkMenuItemForm />} />
               <Route path="restaurant" element={<CardSettingsPage />} />
             </Route>
 
@@ -94,8 +86,6 @@ function App() {
               <Route index element={<Navigate to="overview" replace />} />
               <Route path="overview" element={<OverviewPage />} />
               <Route path="users" element={<UsersPage />} />
-              <Route path="memberships" element={<MembershipsPage />} />
-              <Route path="menu/create/:id" element={<MenuItemForm />} />
               <Route path="restaurant" element={<CardSettingsPage/>} />
             </Route>
 

@@ -179,13 +179,14 @@ const OnboardingPage = () => {
               </div>
 
               <div className="flex justify-between pt-4">
-                <Button
+                {/* <Button
                   variant="outline"
                   onClick={() => navigate("/dashboard")}
                   className="text-gray-700"
                 >
                   Skip for now
-                </Button>
+                </Button> */}
+                <div></div>
                 <Button
                   onClick={() => setStep(2)}
                   className="bg-green-600 hover:bg-green-700"

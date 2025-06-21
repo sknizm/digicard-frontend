@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "../ui/button";
+import hero from '@/assets/hero.png'
 
 export default function Hero() {
     return (
@@ -56,15 +57,10 @@ export default function Hero() {
           </div>
           
           {/* YouTube Video Embed */}
-          <div className="relative w-full max-w-lg aspect-video">
-            <iframe
-              className="w-full h-full rounded-xl shadow-2xl"
-              src="https://www.youtube.com/embed/YFLasugdi3M?si=AiUWHyDrOz7rwaNn"
-              title="Intro Video"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
+          <div className="relative w-full max-w-md ">
+            <img
+            src={hero}
+            />
           </div>
         </div>
       </section>
