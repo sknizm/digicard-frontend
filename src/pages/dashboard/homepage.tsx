@@ -102,7 +102,7 @@ export default function DashboardHomePage() {
         {/* Menu Link Card */}
         <Card className="hover:shadow-lg transition-shadow">
           <CardHeader className="pb-3">
-            <CardTitle className="text-lg font-semibold">Your Menu Link</CardTitle>
+            <CardTitle className="text-lg font-semibold">Your Digital Card Link</CardTitle>
           </CardHeader>
           <CardContent>
             <div className="flex items-center gap-2">
@@ -140,7 +140,7 @@ export default function DashboardHomePage() {
               </div>
             </div>
             <p className="mt-2 text-xs text-muted-foreground">
-              Share this link with your customers to access your digital menu
+              Share this link with your others to access your digital card
             </p>
           </CardContent>
         </Card>
@@ -153,7 +153,7 @@ export default function DashboardHomePage() {
               Your QR Code
             </CardTitle>
             <CardDescription className="text-sm">
-              Print or display this QR code for customers to scan your menu
+              Print or display this QR code for people to scan your Digital Card
             </CardDescription>
           </CardHeader>
           <CardContent>

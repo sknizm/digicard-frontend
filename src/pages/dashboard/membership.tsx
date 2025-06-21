@@ -64,23 +64,26 @@ export default function Membership() {
   const hasLongTermAccess = daysLeft > 10;
   const currentPlan = hasLongTermAccess ? "Lifetime Access" : membership.planType || "Free Trial";
 
+ 
   const plans = [
-    {
-      name: "Lifetime Access",
-      price: "₹999",
-      description: "One-time payment for unlimited access forever",
-      features: [
-        "Unlimited menu items & photos",
-        "Get Orders on WhatsApp",
-        "Instagram account integration",
-        "Free QR code",
-        "All future features included",
-        "Priority support forever",
-      ],
-      cta: "Get Lifetime Access",
-      popular: true,
-    },
-  ];
+  {
+    name: "Yearly Plan",
+    price: "₹299/year",
+    description: "Affordable yearly subscription for your digital identity",
+    features: [
+      "Create your digital business card",
+      "Share via link or QR code",
+      "Add your photo, profession, contact & social links",
+      "Customizable design & layout",
+      "Responsive mobile-friendly card",
+      "Analytics to track views",
+      "Fast support & regular updates",
+    ],
+    cta: "Get Started for ₹299/year",
+    popular: true,
+  },
+];
+
 
   const handleCtaClick = (planName: string) => {
     const message = `Hi, I want to get the ${planName}. Please assist me.`;
