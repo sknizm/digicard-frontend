@@ -1,7 +1,7 @@
 // src/components/dashboard/DashboardSidebar.tsx
 import { Link, useLocation } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-import { X, Home,   Settings,  BadgeCheck } from 'lucide-react';
+import { X, Home,   Settings,  BadgeCheck, MenuIcon } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 type DashboardSidebarProps = {
@@ -13,6 +13,7 @@ export const DashboardSidebar = ({ className, onClose }: DashboardSidebarProps) 
   const location = useLocation();
 const navItems = [
   { name: "Dashboard", href: "/dashboard/home", icon: Home },
+  { name: "All Services", href: "/dashboard/all-services", icon: MenuIcon },
   { name: "Premium", href: "/dashboard/membership", icon: BadgeCheck }, // 👈 New item added here
   { name: "Settings", href: "/dashboard/restaurant", icon: Settings },
 ];

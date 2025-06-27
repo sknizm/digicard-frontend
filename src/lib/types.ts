@@ -24,3 +24,10 @@ export interface CardType {
   updated_at: string;
 }
 
+export interface ServiceType {
+  id?: string;
+  name: string;
+  description: string;
+  price: string;
+  image_url: string;
+}

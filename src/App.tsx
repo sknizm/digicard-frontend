@@ -12,6 +12,8 @@ import { config } from './lib/config';
 import Membership from './pages/dashboard/membership';
 import BusinessCard from './pages/public-site/CardPage';
 import CardSettingsPage from './pages/dashboard/setting';
+import ServiceManagerPage from './pages/dashboard/add-services';
+import ServicesPage from './pages/dashboard/all-services';
 
 // Lazy load pages for performance
 const SignInPage = lazy(() => import('@/pages/auth/SignInPage'));
@@ -67,6 +69,9 @@ function App() {
             >
               <Route index element={<Navigate to="home" replace />} />
               <Route path="home" element={<DashboardHomePage />} />
+              <Route path="add-new" element={<ServiceManagerPage />} />
+              <Route path="edit/:id" element={<ServiceManagerPage />} />
+              <Route path="all-services" element={<ServicesPage />} />
               <Route path="membership" element={<Membership />} />
               <Route path="restaurant" element={<CardSettingsPage />} />
             </Route>
