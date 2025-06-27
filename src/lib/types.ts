@@ -31,3 +31,39 @@ export interface ServiceType {
   price: string;
   image_url: string;
 }
+
+
+
+export type CardDataType = {
+  name?: string;
+  profession?: string;
+  bio?: string;
+  profileImage?: string;
+  bannerImage?: string;
+  email?: string;
+  phone?: string;
+  address?: string;
+  instagram?: string;
+  facebook?: string;
+  website?: string;
+};
+
+// export type CardType = {
+//   id: string;
+//   data: CardDataType;
+//   services?: ServiceType[];
+// };
+
+export type BookingData = {
+  name: string;
+  phone: string;
+  serviceId: string;
+  message: string;
+};
+
+export type StatusType = 
+  | "loading" 
+  | "not_found" 
+  | "inactive" 
+  | "loaded" 
+  | "error";
